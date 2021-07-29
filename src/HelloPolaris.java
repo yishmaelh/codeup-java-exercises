@@ -4,5 +4,13 @@ public class HelloPolaris {
 
         System.out.println("Hello, World!");
 
+        int myFavoriteNumber = 7;
+
+        System.out.println(myFavoriteNumber);
+
+        String myString = "Drive Wheel Sword";
+
+        System.out.println(myString);
+
     }
 }
