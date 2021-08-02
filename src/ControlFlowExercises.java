@@ -16,5 +16,11 @@ public class ControlFlowExercises {
             addTwos += 2;
         } while (addTwos <= 100);
 
+        int minusFive = 100;
+        do {
+            System.out.println(minusFive);
+            minusFive -= 5;
+        } while (minusFive >= -5);
+
     }
 }
