@@ -21,10 +21,10 @@ public class ConsoleExercises {
         System.out.printf("You entered: \n %s\n %s\n %s \n", firstWord, secondWord, thirdWord);
 
         System.out.print("Type a sentence!");
-        String inputtedSentence = scanner.next() + " ";
-        inputtedSentence += scanner.next() + " ";
-        inputtedSentence += scanner.next() + " ";
-        inputtedSentence += scanner.next();
+        String inputtedSentence = scanner.nextLine() + " ";
+        inputtedSentence = scanner.nextLine() + " ";
+//        inputtedSentence += scanner.next() + " ";
+//        inputtedSentence += scanner.next();
 
         System.out.printf("Here is your sentence: \n %s", inputtedSentence);
 
