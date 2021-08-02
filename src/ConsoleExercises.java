@@ -12,11 +12,21 @@ public class ConsoleExercises {
         int userInt = scanner.nextInt();
         System.out.print("You entered: " + "" + userInt + "\n");
 
+
+
         System.out.print("Enter three different words:");
-        var firstWord = scanner.next();
-        var secondWord = scanner.next();
-        var thirdWord = scanner.next();
-        System.out.printf("You entered: \n %s\n %s\n %s.\n", firstWord, secondWord, thirdWord);
+        String firstWord = scanner.next();
+        String secondWord = scanner.next();
+        String thirdWord = scanner.next();
+        System.out.printf("You entered: \n %s\n %s\n %s \n", firstWord, secondWord, thirdWord);
+
+        System.out.print("Type a sentence!");
+        String inputtedSentence = scanner.next() + " ";
+        inputtedSentence += scanner.next() + " ";
+        inputtedSentence += scanner.next() + " ";
+        inputtedSentence += scanner.next();
+
+        System.out.printf("Here is your sentence: \n %s", inputtedSentence);
 
 
     }
