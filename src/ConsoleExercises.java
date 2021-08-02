@@ -28,6 +28,18 @@ public class ConsoleExercises {
 
         System.out.printf("Here is your sentence: \n %s", inputtedSentence);
 
+        System.out.print("\n" + "What is the length of the codeup classroom.");
+        int length = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Please enter the width of the classroom.\n");
+        int width = Integer.parseInt(scanner.nextLine());
+
+        int area = length * width;
+        int perimeter = (length * 2) + (width * 2);
+
+        System.out.printf("The area is: %d\n", area);
+        System.out.printf("The perimeter is: %d\n", perimeter);
+
 
     }
 
