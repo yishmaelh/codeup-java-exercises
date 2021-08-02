@@ -10,17 +10,23 @@ public class ControlFlowExercises {
 
         }
 
-        int addTwos = 0;
-        do {
-            System.out.println(addTwos);
-            addTwos += 2;
-        } while (addTwos <= 100);
+//        int addTwos = 0;
+//        do {
+//            System.out.println(addTwos);
+//            addTwos += 2;
+//        } while (addTwos <= 100);
+//
+//        int minusFive = 100;
+//        do {
+//            System.out.println(minusFive);
+//            minusFive -= 5;
+//        } while (minusFive >= -10);
 
-        int minusFive = 100;
+        int square = 2;
         do {
-            System.out.println(minusFive);
-            minusFive -= 5;
-        } while (minusFive >= -5);
+            System.out.println(square);
+            square *= square;
+        } while (square < 1000000 & (square > 1));
 
     }
 }
