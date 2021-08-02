@@ -12,6 +12,13 @@ public class ConsoleExercises {
         int userInt = scanner.nextInt();
         System.out.print("You entered: " + "" + userInt + "\n");
 
+        System.out.print("Enter three different words:");
+        var firstWord = scanner.next();
+        var secondWord = scanner.next();
+        var thirdWord = scanner.next();
+        System.out.printf("You entered: \n %s\n %s\n %s.\n", firstWord, secondWord, thirdWord);
+
+
     }
 
 
