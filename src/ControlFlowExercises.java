@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
@@ -63,6 +65,35 @@ public class ControlFlowExercises {
             i++;
         }
 
+        // From Ry's walkthrough
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        boolean userContinues = true;
+
+        do {
+            System.out.println("What number would you like to go up to?");
+            int userInt = scanner.nextInt();
+            System.out.println("\nHere is your table!\n");
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | -----");
+            for (int numI = 1; numI <= userInt; numI++) {
+                System.out.printf("%-6d", numI);
+                System.out.print(" | ");
+                System.out.printf("%-7d", numI * numI);
+                System.out.print(" | ");
+                System.out.print(numI * numI * numI);
+                System.out.println();
+            }
+            System.out.println("Would you like to enter another number (y/n)?");
+            String userResponse = scanner.next();
+            if (!userResponse.equalsIgnoreCase("y")) {
+                userContinues = false;
+            }
+
+
+        } while (userContinues);
 
     }
 }
