@@ -12,6 +12,12 @@ public class HelloWorld {
 
         System.out.println(myString);
 
+        long myNumber = 123;
+        System.out.println(myNumber);
+
+//        float myNumber = 3.14;
+//        System.out.println(myNumber);
+
 //        int x = 5;
 //        System.out.println(x++);
 //        System.out.println(x);
