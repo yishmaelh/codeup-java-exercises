@@ -26,12 +26,34 @@ public class HelloWorld {
 //
 //    var class = "I broke Java"
 
-        int x = 4;
-        x = x + 5;
+//        int x = 4;
+//        x = x + 5;
+//
+//        // Shorthand
+//
+//        x += 5;
+
+//        int x = 3;
+//        int y = 4;
+//        y = y * x;
 
         // Shorthand
+//
+//        int x = 3;
+//        int y = 4;
+//        y = y *= x;
 
-        x += 5;
+//        int x = 10;
+//        int y = 2;
+//        x = x / y;
+//        y = y - x;
+
+        // Shorthand
+//         int x = 10;
+//         int y = 2;
+//         x /= y;
+//         y -= x;
+//
 
 
     }
