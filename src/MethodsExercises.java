@@ -32,10 +32,10 @@ public class MethodsExercises {
             System.out.println("Your number is in range!");
         } else {
             System.out.println("You are out of range.");
-
-            System.out.println("Choose a number between 1 and 10");
+            getInput(1, 10);
 
         }
+
         return userInput;
     }
 
