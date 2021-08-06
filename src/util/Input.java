@@ -19,4 +19,19 @@ public class Input {
         String input = userInput.nextLine();
         return input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("y");
     }
+
+    public int getInt(){
+        return userInput.nextInt();
+    }
+
+    public double getDouble( double low, double high){
+        System.out.print("Please enter  number between " + low + " and " + high);
+        int input = userInput.nextInt();
+        if (input >= low && input <= high){
+            return input;
+        } else {
+            getDouble(low, high);
+            return input;
+        }
+    }
 }
