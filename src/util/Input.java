@@ -10,6 +10,7 @@ public class Input {
     }
 
     public String getString(){
+        System.out.println("Type something");
         String input = userInput.nextLine();
         return input;
     }
@@ -21,6 +22,7 @@ public class Input {
     }
 
     public int getInt(){
+        System.out.println("Please enter a number");
         return userInput.nextInt();
     }
 
