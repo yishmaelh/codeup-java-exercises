@@ -34,4 +34,9 @@ public class Input {
             return input;
         }
     }
+
+    double getDouble(){
+        System.out.println("Please enter a decimal");
+        return userInput.nextDouble();
+    }
 }
