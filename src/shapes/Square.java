@@ -2,6 +2,14 @@ package shapes;
 
 public class Square extends Rectangle {
 
+
+    public int side;
+
+    public Square(int side) {
+        super(side, side);
+        this.side = side;
+    }
+
     public Square(int length, int width) {
         super(length, width);
     }
@@ -14,10 +22,5 @@ public class Square extends Rectangle {
         this.width = width;
     }
 
-    public  int getArea(){
-        return width*length;
-    }
-    public int getPerimeter(){
-        return width*4;
-    }
+
 }
