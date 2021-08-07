@@ -23,4 +23,11 @@ public class Square extends Rectangle {
     }
 
 
+    public int getArea(){
+        return side * side;
+    }
+
+    public int getPerimeter(){
+        return side * 4;
+    }
 }
