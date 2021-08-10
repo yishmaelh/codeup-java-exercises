@@ -11,18 +11,22 @@ public class ArraysExercises {
         gundamPilots[0] = new Person("Judau");
         gundamPilots[1] = new Person("Domon");
         gundamPilots[2] = new Person("Allenby");
-        for()
-        System.out.println(Arrays.toString(addPerson(gundamPilots, new Person("Kamille"))));
+        for( int i = 0; i < gundamPilots.length; i++){
+            System.out.println(gundamPilots[i].getName());
+        }
+
+//        System.out.println(Arrays.toString(addPerson(gundamPilots, new Person("Kamille"))));
 
 
     }
-    public static Person[] addPerson(Person[] people, Person guy){
+    public static Person[] addPerson(Person[] people, Person Jerid){
         //Use copy to create new array equal to array length+1
         //Add parameter to new array
         //Return new array with added parameter
         Person[] newPerson = Arrays.copyOf(people, people.length+1);
-        newPerson[newPerson.length -1] = guy;
+        newPerson[newPerson.length -1] = Jerid;
         return newPerson;
 
     }
 }
+
