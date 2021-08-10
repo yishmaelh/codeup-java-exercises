@@ -1,3 +1,4 @@
+import java.util.Random;
 public class ServerNameGenerator {
 
 public static void main(String[] args) {
@@ -7,6 +8,8 @@ public static void main(String[] args) {
     System.out.println("Here is your server name: ");
     System.out.println();
 }
+
+
 
 
 
