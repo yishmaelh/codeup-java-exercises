@@ -9,6 +9,16 @@ public class Student {
 
     public void setStudentName(String nameOfStudent){
         this.studentName = nameOfStudent;
-        this.grades =  new ArrayList<>();
+        this.grades = new ArrayList<>();
     }
+
+    public String getStudentName(){
+        return studentName;
+    }
+
+    public ArrayList<Integer> getGrades(){
+        return grades;
+    }
+
+
 }
