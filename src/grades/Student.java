@@ -33,4 +33,17 @@ public class Student {
         return sumOfGrades/amountOfGrades;
     }
 
+    public static void main(String[] args) {
+        Student student1 = new Student();
+        student1.setStudentName("Yish");
+
+        student1.addGrade(70);
+        student1.addGrade(93);
+        student1.addGrade((86));
+
+        System.out.println(student1.getStudentName() + " has an average of " + student1.getGradeAverage());
+
+    }
 }
+
+
