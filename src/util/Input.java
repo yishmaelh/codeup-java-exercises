@@ -22,8 +22,7 @@ public class Input {
     }
 
     public int getInt(){
-        System.out.println("Please enter a number");
-        return userInput.nextInt();
+        String intString = getString();
     }
 
     public double getDouble( double low, double high){

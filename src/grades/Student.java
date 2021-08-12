@@ -18,6 +18,7 @@ public class Student {
     }
 
     public ArrayList<Integer> getGrades() {
+
         return grades;
     }
 
