@@ -30,6 +30,11 @@ public class GradesApplication {
         student4.addGrade(76);
         student4.addGrade(100);
 
+        HashMap<String, Student> students = new HashMap<>();
+        students.put("CptStryder", student1);
+        students.put("BlazeHado", student2);
+        students.put("DeathLink",student3);
+        students.put("NotxGordonxShepard",student4);
 
     }
 
