@@ -33,15 +33,18 @@ public class Input {
 
     }
 
-    public double getADouble( double low, double high){
+    public double getDouble( double low, double high){
         System.out.println("Enter a double between " + low + " and " + high );
         String doubleString = getString();
         try{
-            return Double.valueOf(doubleString);
+            double testDouble = Double.valueOf(doubleString);
+            if (testDouble >= low && testDouble <= high){
+                return testDouble;
+            }
         } catch(NumberFormatException e){
             System.out.println("Not a double, give it another try");
         }
-        return getADouble(1,10);
+        return getDouble(1,10);
 
     }
 
@@ -49,6 +52,7 @@ public class Input {
         System.out.println("Please enter a decimal");
         return userInput.nextDouble();
     }
+
 
 
 }
