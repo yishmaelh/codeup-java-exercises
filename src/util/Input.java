@@ -53,6 +53,20 @@ public class Input {
         return userInput.nextDouble();
     }
 
+    public int getInt(int min, int max){
+        System.out.println("Enter an integer between " + min + " and " + max);
+        String intString = getString();
+        try{
+            int testInt = Integer.valueOf(intString);
+            if (testInt >= min && testInt <= max){
+                return testInt;
+            }
+        } catch(NumberFormatException e){
+            System.out.println("Not an integer, please try again");
+        }
+        return getInt(1, 100);
+
+    }
 
 
 }
