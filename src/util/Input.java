@@ -33,15 +33,16 @@ public class Input {
 
     }
 
-    public double getDouble( double low, double high){
-        System.out.print("Please enter  number between " + low + " and " + high);
-        int input = userInput.nextInt();
-        if (input >= low && input <= high){
-            return input;
-        } else {
-            getDouble(low, high);
-            return input;
+    public double getADouble( double low, double high){
+        System.out.println("Enter a double between " + low + " and " + high );
+        String doubleString = getString();
+        try{
+            return Double.valueOf(doubleString);
+        } catch(NumberFormatException e){
+            System.out.println("Not a double, give it another try");
         }
+        return getADouble(1,10);
+
     }
 
     public double getDouble(){
