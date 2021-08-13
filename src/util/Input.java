@@ -10,7 +10,7 @@ public class Input {
     }
 
     public String getString(){
-        System.out.println("Type something");
+//        System.out.println("Type something");
         String input = userInput.nextLine();
         return input;
     }
@@ -22,7 +22,15 @@ public class Input {
     }
 
     public int getInt(){
+        System.out.println("Enter an integer");
         String intString = getString();
+        try{
+           return Integer.valueOf(intString);
+        } catch(NumberFormatException e){
+            System.out.println("Not an integer, please try again");
+        }
+        return getInt();
+
     }
 
     public double getDouble( double low, double high){
@@ -40,4 +48,7 @@ public class Input {
         System.out.println("Please enter a decimal");
         return userInput.nextDouble();
     }
+
+
 }
+
